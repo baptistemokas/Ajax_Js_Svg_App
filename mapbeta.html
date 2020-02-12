@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test SVG</title>
+    <link rel="stylesheet" type="text/css" href="mapbeta.css">
+</head>
+
+<body>
+  <div id="ConteneurMap">
+    <div id="ConteneurChamps">
+      <iframe src="https://emergence-lfe.org/particles/test.html?cx=-0.06805000000000039&amp;cy=0.10160000000000036&amp;w=26.1351&amp;h=26.1351&amp;dt=0.01&amp;fo=0.998&amp;dp=0.009&amp;cm=1&amp;vf=%2F%2F p.x and p.y are current coordinates%0A%2F%2F v.x and v.y is a velocity at point p%0Avec2 get_velocity(vec2 p) {%0A%20 vec2 v %3D vec2(0.%2C 0.)%3B%0A%0A%20 %2F%2F change this to get a new vector field%0A%20 v.x %3D sin((p.y-p.x))%3B%0A%20 v.y %3D sin(p.y*p.x)%3B%0A%0A%20 return v%3B%0A}&amp;code=%2F%2F p.x and p.y are current coordinates%0A%2F%2F v.x and v.y is a velocity at point p%0Avec2 get_velocity(vec2 p) {%0A%20 vec2 v %3D vec2(0.%2C 0.)%3B%0A%0A%20 %2F%2F change this to get a new vector field%0A%20 v.x %3D sin((p.y-p.x))%3B%0A%20 v.y %3D sin(p.y*p.x)%3B%0A%0A%20 return v%3B%0A}&amp;pc=3500" style="height: 960px; width: 1924px;">
+    </iframe>
+    </div>
+    <div id="ConteneurColor">
+
+    </div>
+  	<div id="ConteneurSVG">
+          <div id="svgone"> 
+            <object id="svgobject" data="https://emergence-lfe.org/welcomepro/image.svg" type="image/svg+xml"></object>
+          </div>
+          <div id="svgtwo"> 
+            <object id="svgobject2" data="https://emergence-lfe.org/welcomepro/droit.svg" type="image/svg+xml"></object>
+          </div>
+          <div id="svgthree">
+            <object id="svgobject3" data="https://emergence-lfe.org/welcomepro/bas.svg" type="image/svg+xml"></object>
+          </div>
+        </div>
+    <div id="ConteneurImage">
+      <div id="tableau" class="closeaction" >
+        <img src="#" alt=""  class="closeaction" id="imageloadjavascript">
+      </div>
+    </div>
+    <div id="ConteneurPanneau">
+      <div id="fond">
+      </div>
+      <div id="Panneaudroit">
+        <div id="drag" class="dragaction dragicon">
+
+        </div>
+        <div id="ContenuPanneau">
+          <div id="command">
+            <p class="closeaction closeicon">X</p>
+          </div>
+          <div id="contentPage">
+
+          </div>
+          <div id="pied">
+            <a href="#">
+              <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    <div id="minimap">
+      <svg id="scopeContainer" class="thumbViewClass">
+        <g>
+          <rect id="scope" fill="red" fill-opacity="0.1" stroke="red" stroke-width="2px" x="0" y="0" width="0" height="0"/>
+          <line id="line1" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"/>
+          <line id="line2" stroke="red" stroke-width="2px" x1="0" y1="0" x2="0" y2="0"/>
+        </g>
+      </svg>
+      <embed id="miniimage" type="image/svg+xml" src="image.svg" class="thumbViewClass"/>
+  	</div>
+  !-->
+
+
+<script type="text/javascript" src="svg-pan-zoom.min.js"></script>
+<script type="text/javascript" src="exploresvg.js"></script>
+</body>
+</html>
